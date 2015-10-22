@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Cursos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form name="cursos" id="cursos" action= "AltaCurso" method="post"> 
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" required autofocus/>
+      <br>
+      <label for="apellido1">Primer Apellido:</label>
+      <input type="text" name="apellido1" required/>
+      <label for="apellido2">SegundoApellido:</label>
+      <input type="text" name="apellido2" required/>
+      <br>
+      <label for="domicilio">Domicilio:</label>
+      <input type="text" name="domicilio" required/>
+      <br>
+      <label for="ciudad">Ciudad:</label>
+      <select name="ciudad">
+        <option disabled selected>Seleccione ciudad</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Bilbao">Bilbao</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Valencia">Valencia</option>
+      </select>
+      <br>
+      <label for="sexo">Sexo:</label>
+      Hombre <input type="radio" name="sexo" value="H"/>
+      Mujer<input type="radio" name="sexo" value="M"/>
+      <br>
+      <label for="sistemas">Sistema Operativo:</label>
+      Windows XP<input type="checkbox" name="sistemas" value="Windows XP"/>
+      Windows 2000<input type="checkbox" name="sistemas" value="Windows 2000"/>
+      Linux<input type="checkbox" name="sistemas" value="Linux">
+      <br>
+      <label for="comentario">Introduzca sus comentarios:</label>
+      <br>
+      <textarea name="comentario" rows="4" cols="50" form="cursos"></textarea>
+      <br>
+      <input type="submit" value="Aceptar"/>
+      <input type="reset" value="Limpiar"/>
+    </form>
+  </body>
+</html>
